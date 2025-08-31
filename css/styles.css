@@ -318,6 +318,24 @@ body {
     border-bottom-color: var(--primary-color);
 }
 
+.nav__link--admin {
+    background: var(--gradient-primary);
+    color: var(--white) !important;
+    padding: var(--space-xs) var(--space-base);
+    border-radius: var(--border-radius);
+    border-bottom: none !important;
+    font-weight: var(--fw-semibold);
+    text-transform: uppercase;
+    font-size: var(--fs-sm);
+    letter-spacing: 0.5px;
+}
+
+.nav__link--admin:hover {
+    background: var(--gradient-secondary);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-base);
+}
+
 .nav__close {
     position: absolute;
     top: var(--space-lg);

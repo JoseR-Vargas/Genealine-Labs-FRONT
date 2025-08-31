@@ -369,13 +369,15 @@ class ContactForm {
     }
 
     async submitForm(data) {
-        // Simulate API call
-        return new Promise((resolve) => {
-            setTimeout(() => {
-                console.log('Form data:', data);
-                resolve();
-            }, 1000);
-        });
+        const contactData = {
+            nombre: data.name,
+            apellido: data.lastname,
+            email: data.email,
+            celular: data.phone,
+            mensaje: data.message
+        };
+        
+        return await ApiService.createMessage(contactData);
     }
 
     setSubmitState(button, isSubmitting) {
