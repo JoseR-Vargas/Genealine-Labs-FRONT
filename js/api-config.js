@@ -10,7 +10,7 @@ class ApiConfig {
             return 'http://localhost:3001';
         }
         
-        return 'https://genealine-labs-back.onrender.com/';
+        return 'https://genealine-labs-back.onrender.com';
     }
 }
 
