@@ -263,6 +263,7 @@ body {
     display: flex;
     align-items: center;
     gap: var(--space-xs);
+    margin-left: var(--space-base);
 }
 
 .nav__logo-text {
